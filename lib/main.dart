@@ -1,6 +1,6 @@
 import 'package:ecommerce/const/app_string.dart';
 import 'package:ecommerce/ui/route/route.dart';
-import 'package:ecommerce/ui/theme/app_theme.dart';
+// import 'package:ecommerce/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           title: AppString.appName,
           debugShowCheckedModeBanner: false,
-          defaultTransition: Transition.leftToRight,
-          theme: AppTheme().lightTheme(context),
-          darkTheme: AppTheme().darkTheme(context),
-          themeMode: ThemeMode.light,
+          // defaultTransition: Transition.leftToRight,
+          // theme: AppTheme().lightTheme(context),
+          // darkTheme: AppTheme().darkTheme(context),
+          // themeMode: ThemeMode.light,
           getPages: getPages,
           initialRoute: splash,
           unknownRoute: getPages.first,
