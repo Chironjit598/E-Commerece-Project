@@ -2,6 +2,7 @@ import 'package:ecommerce/const/app_string.dart';
 import 'package:ecommerce/ui/route/route.dart';
 // import 'package:ecommerce/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(statusBarColor: Colors.deepOrange.shade300));
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       builder: (context, child) {
